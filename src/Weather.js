@@ -11,7 +11,7 @@ export default function Weather() {
   }
   const featchweather=async()=>{
     try{
-      const response=await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city }&appid=add your api key`)
+      const response=await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city }&appid=8074560ebe2a2af78ea2209a56f227ad`)
       
       setWeather(response.data);
       console.log(response);
@@ -30,7 +30,7 @@ export default function Weather() {
    <>
      <div className='weather-container'>
      <center><h2>Weather App</h2>
-     <h5>by arsh</h5></center>
+   </center>
 <input type='text' className='weather_search' placeholder="Enter your city name"
 value={city} onChange= {handleCityChange}/>
 <button onClick={handleClick}>Get Weather</button>
