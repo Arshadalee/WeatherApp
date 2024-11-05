@@ -29,6 +29,8 @@ export default function Weather() {
   return (
    <>
      <div className='weather-container'>
+     <center><h2>Weather App</h2>
+     <h5>by arsh</h5></center>
 <input type='text' className='weather_search' placeholder="Enter your city name"
 value={city} onChange= {handleCityChange}/>
 <button onClick={handleClick}>Get Weather</button>
